@@ -1,15 +1,30 @@
 <template>
   <div>
-    <h1>Hello World</h1>
+    <Header />
+    <div class="wrap">
+      <Menu />
+      <Content />
+    </div>
   </div>
 </template>
 
 <script>
-export default {};
+import Header from "./components/Header";
+import Menu from "./components/Menu";
+import Content from "@/components/Content";
+
+export default {
+  name: "app",
+  components: {
+    Header,
+    Menu,
+    Content
+  }
+};
 </script>
 
 <style scoped>
-h1 {
-  color: #03a9f4;
+.wrap {
+  display: flex;
 }
 </style>
