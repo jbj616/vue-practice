@@ -1,24 +1,21 @@
 <template>
   <div>
-    <Header />
-    <div class="wrap">
-      <Menu />
-      <Content />
-    </div>
+    <Box color="blue" />
+    <Box color="purple" />
+    <Box color="green" />
+    <Box color="blue" />
+    <Box color="purple" />
+    <Box />
   </div>
 </template>
 
 <script>
-import Header from "./components/Header";
-import Menu from "./components/Menu";
-import Content from "@/components/Content";
+import Box from "./components/Box";
 
 export default {
   name: "app",
   components: {
-    Header,
-    Menu,
-    Content
+    Box
   }
 };
 </script>
